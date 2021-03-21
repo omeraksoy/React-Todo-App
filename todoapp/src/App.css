@@ -74,11 +74,15 @@
 }
 
 .liste > div {
-  padding: 8px 0;
+  padding: 5px 0px;
+  margin: 20px;
   border-bottom: 1px solid #ccc;
   font-size: 20px;
   text-transform: capitalize;
   cursor: pointer;
+}
+.liste > div:hover {
+  color: red;
 }
 
 .liste > div:last-child {
