@@ -7,8 +7,7 @@
   pointer-events: none;
 }
 ::selection {
-  background: rgb(0, 0, 0);
-  color: rgb(0, 0, 0);
+  background: white !important;
 }
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {

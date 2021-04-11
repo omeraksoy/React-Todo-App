@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import './App.css';
+import Input from './components/inputs' 
+
 const INITIAL_STATE = [
   { id: 1, baslik: "Alisveris Yap", tamamlandi: false },
   { id: 2, baslik: "Fatura ode", tamamlandi: true }
@@ -10,8 +12,13 @@ const INITIAL_STATE = [
   console.log("YENI BASLIK: ", yeniBaslik);
   return (
     <div className="App">
-      <h1>Yapılacaklar Listesi</h1>
-      <div className="ekleme_formu">
+      <h1>test</h1>
+      <div class="row">
+<div class="col-3"> col menu 
+<Input></Input>
+</div>
+<div class="col-9"> 
+<div className="ekleme_formu">
         <input value={yeniBaslik} onChange={(e) => setYeniBaslik(e.target.value)} placeholer="listeye ekle" />
         <button onClick={() =>
            {setListe([
@@ -32,7 +39,11 @@ const INITIAL_STATE = [
       <button onClick={() => setListe(liste.filter(item => !item.tamamlandi))} className="temizle">Tamamlananları Sil</button>
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
       <button onClick={() => setListe(liste.filter(item => item.tamamlandi))} className="temizle">Tamamlanmayanları Sil</button>
-    </div>
+  
+
+ </div>
+      </div>
+       </div>
     
   );
 }
