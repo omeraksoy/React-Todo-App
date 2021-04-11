@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import './App.css';
-import Input from './components/inputs' 
 
 const INITIAL_STATE = [
   { id: 1, baslik: "Alisveris Yap", tamamlandi: false },
@@ -15,7 +14,7 @@ const INITIAL_STATE = [
       <h1>test</h1>
       <div class="row">
 <div class="col-3"> col menu 
-<Input></Input>
+
 </div>
 <div class="col-9"> 
 <div className="ekleme_formu">
